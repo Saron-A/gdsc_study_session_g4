@@ -6,6 +6,6 @@ let mass = prompt("Enter your mass in kg: ");
 let height = prompt("Enter your height in meters: ");
 
 let bmi;
-bmi = mass / (Math.pow(height, 2));
+bmi = mass / (height * 2);
 
 console.log("Your BMI is " + bmi.toFixed(2));// to round to 2 decimal numbers
