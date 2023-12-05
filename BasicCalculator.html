@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 55px;
+        background-color: yellowgreen;
+      }
+      #result {
+        border: 1px solid white;
+        width: 350px;
+        margin-top: 5px;
+        background-color: yellowgreen;
+        color: black;
+      }
+      input {
+        background-color: yellowgreen;
+      }
+      #all {
+        border: 3px solid white;
+        width: 400px;
+        height: 100px;
+        margin-top: 5px;
+        margin: 100px;
+        padding: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        vertical-align: middle;
+        top: 50%;
+        right: 50%;
+      }
+      h1 {
+        text-align: center;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Basic Calculator</h1>
+    <div id="all">
+      <section>
+        <input id="operand1" type="text" placeholder="0" />
+        <input id="operand2" type="text" placeholder="0" />
+      </section>
+      <section>
+        <button onclick="addition()">+</button>
+        <button onclick="subtraction()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+      </section>
+      <div id="result">0</div>
+    </div>
+    <script src="Calculator.js"></script>
+  </body>
+</html>
